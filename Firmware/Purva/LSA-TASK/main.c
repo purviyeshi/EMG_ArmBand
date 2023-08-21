@@ -3,8 +3,6 @@
 #include "esp_adc_cal.h"
 #include "esp_log.h"
 
-#include <stdio.h>
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
