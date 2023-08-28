@@ -1,14 +1,18 @@
+
 # EMG_ArmBand
 
 To create an EMG (Electromyography) Arm Band, which may be worn as a bracelet, to detect hand movements and orientation via muscle impulses transmitted through your forearm. One will be designing PCBs based on EMG sensors, integrating them with microcontrollers, and subsequently train the system using Machine Learning (ML).
 
 ## Table of Contents
 
-- [About The Project](#emg_armband)
+-  [About The Project](#emg_armband)
 - [Domains Explored](#domains-explored)
 - [Project Workflow](#project-workflow)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [References](#references)
 
 
 ## Domains Explored
@@ -39,3 +43,31 @@ Clone the project by typing the following command in your Terminal
 ```bash
   git clone https://github.com/purviyeshi/EMG_ArmBand.git
 ```
+
+Navigate to the EMG_ArmBand folder
+```bash
+  cd EMG_ArmBand
+```
+
+### Usage
+Once the requirements are satisfied, you can easily download the project and use it on your machine. After following the above steps , use the following commands to:
+
+To activate the IDF
+```bash
+  get_idf
+```
+To build the code
+```bash
+  idf.py build
+```
+To flash the code
+```bash
+  idf.py -p (PORT) flash monitor
+```
+## Contributors
+
+- [Purva Yeshi](https://github.com/purviyeshi/EMG_ArmBand.git)
+- [Anuj Akotkar](https://github.com/anuj-akotkar/EMG_armband.git)
+
+## References
+[ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/v4.4.3/esp32/index.html)
