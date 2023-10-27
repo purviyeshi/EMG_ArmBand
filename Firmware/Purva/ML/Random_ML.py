@@ -203,7 +203,7 @@ window_size = 55
 # Split continuous test data into segments of window_size
 X_test_segments = [X_test[i:i + window_size] for i in range(0, len(X_test), window_size)]
 
-# Placeholder for the labels, replace with actual labels
+# Placeholder for the labels
 y_test_one_hot_output_1 = utils.to_categorical(np.zeros(len(X_test_segments)), num_classes=num_classes)
 y_test_one_hot_output_2 = utils.to_categorical(np.zeros(len(X_test_segments)), num_classes=num_classes)
 y_test_one_hot_output_3 = utils.to_categorical(np.zeros(len(X_test_segments)), num_classes=num_classes)
@@ -254,10 +254,4 @@ for i in range(len(X_test_segments)):
     chosen_output = np.argmax(np.sum(predictions, axis=0))
 
     print(f"Chosen output for window {i + 1}: {chosen_output}")
-
-
-
-
-
-
 
